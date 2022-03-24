@@ -18,8 +18,9 @@ __kernel void HelloWorld(__global int* argument1, __global int* argument2, __glo
 	printf("Hello World\n");
 
 	//TODO: print the work item, work group and arguments
+	//threads run independependly
 	
-	printf("Hi from work item: %-3d work gorup: %-2d Arg1: %-5d Arg2: %-5d Output: %d \n", workItemNum,workGroupNum,arg1,arg2,output[workItemNum]);
+	printf("Hi from work item: %-3d work group: %-2d Arg1: %-5d Arg2: %-5d Output: %d \n", workItemNum,workGroupNum,arg1,arg2,output[workItemNum]);
 
         //}
 	/*
